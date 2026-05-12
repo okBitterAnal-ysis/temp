@@ -81,4 +81,5 @@ The Ford-Fulkerson Algorithm calculates the maximum flow in a flow network.
 It repeatedly finds augmenting paths using BFS (Edmonds-Karp variant) and 
 increases the flow until no more paths can be found.
 Complexity: O(V * E^2) with BFS.
+Recurrence Relation: Flow(f) = Flow(f) + AugmentingPath(rGraph)
 */

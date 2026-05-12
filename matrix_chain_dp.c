@@ -42,4 +42,5 @@ Matrix Chain Multiplication finds the most efficient way to multiply a
 sequence of matrices. It uses Dynamic Programming to store results of 
 subproblems (minimum cost to multiply a range of matrices).
 Complexity: O(n^3)
+Recurrence Relation: T(i, j) = min_{i<=k<j} {T(i, k) + T(k+1, j) + p_{i-1}*p_k*p_j}
 */

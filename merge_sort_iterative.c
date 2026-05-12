@@ -2,6 +2,8 @@
 #include <time.h>
 #include <stdlib.h>
 
+int min(int x, int y) { return (x < y) ? x : y; }
+
 void merge(int arr[], int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
@@ -20,12 +22,15 @@ void merge(int arr[], int l, int m, int r) {
     free(L); free(R);
 }
 
-void mergeSort(int arr[], int l, int r) {
-    if (l < r) {
-        int m = l + (r - l) / 2;
-        mergeSort(arr, l, m);
-        mergeSort(arr, m + 1, r);
-        merge(arr, l, m, r);
+void mergeSortIterative(int arr[], int n) {
+    int curr_size;
+    int left_start;
+    for (curr_size = 1; curr_size <= n - 1; curr_size = 2 * curr_size) {
+        for (left_start = 0; left_start < n - 1; left_start += 2 * curr_size) {
+            int mid = min(left_start + curr_size - 1, n - 1);
+            int right_end = min(left_start + 2 * curr_size - 1, n - 1);
+            merge(arr, left_start, mid, right_end);
+        }
     }
 }
 
@@ -38,10 +43,10 @@ int main() {
     for (int i = 0; i < n; i++) scanf("%d", &arr[i]);
 
     clock_t start = clock();
-    mergeSort(arr, 0, n - 1);
+    mergeSortIterative(arr, n);
     clock_t end = clock();
 
-    printf("Sorted array: ");
+    printf("Sorted array (Iterative): ");
     for (int i = 0; i < n; i++) printf("%d ", arr[i]);
     printf("\nTime taken: %f seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
 
@@ -51,7 +56,8 @@ int main() {
 
 /*
 Concept:
-Merge Sort is a Divide and Conquer algorithm. It divides the array into 
-two halves, sorts them recursively, and then merges the sorted halves.
+The Iterative Merge Sort (Bottom-Up) starts by merging subarrays of size 1, 
+then size 2, then size 4, and so on, until the entire array is sorted.
 Complexity: O(n log n)
+Recurrence Relation: T(n) = 2T(n/2) + O(n)
 */

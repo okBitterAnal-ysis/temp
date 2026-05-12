@@ -58,4 +58,5 @@ Dijkstra's Algorithm finds the shortest path from a source vertex to all
 other vertices in a weighted graph with non-negative edge weights. 
 It uses a greedy approach by always picking the nearest unvisited vertex.
 Complexity: O(V^2) for adjacency matrix.
+Recurrence Relation: T(V) = T(V-1) + O(V)
 */

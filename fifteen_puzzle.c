@@ -43,8 +43,8 @@ int main() {
 Concept:
 The 15 Puzzle problem is solved using LC Branch and Bound (Least Cost Search). 
 It uses a heuristic function (like Manhattan distance or misplaced tiles) 
-to estimate the cost to reach the goal. The state with the minimum 
-estimated cost is expanded first.
-Complexity: Exponential (reduced by heuristic)
+to estimate the cost to reach the goal.
+Complexity: Exponential
+Recurrence Relation: f(n) = g(n) + h(n) where g is path cost and h is heuristic
 Note: This program checks solvability as a simple demonstration of the problem space.
 */

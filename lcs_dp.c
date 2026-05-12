@@ -42,4 +42,5 @@ Longest Common Subsequence (LCS) finds the longest subsequence present in
 two sequences in the same relative order. It uses Dynamic Programming 
 to build a table of LCS lengths for all prefixes of the two strings.
 Complexity: O(m*n)
+Recurrence Relation: L[i][j] = L[i-1][j-1] + 1 if X[i]==Y[j], else max(L[i-1][j], L[i][j-1])
 */

@@ -41,4 +41,5 @@ Insertion Sort works by taking one element at a time from the unsorted part
 and inserting it into its correct position in the sorted part.
 It is similar to how we sort playing cards in our hands.
 Complexity: O(n^2)
+Recurrence Relation: T(n) = T(n-1) + O(n)
 */

@@ -49,5 +49,6 @@ Concept:
 Strassen's Algorithm is a Divide and Conquer approach for matrix multiplication 
 that reduces the number of recursive multiplications from 8 to 7.
 Complexity: O(n^2.81)
+Recurrence Relation: T(n) = 7T(n/2) + O(n^2)
 Note: This implementation is for 2x2 matrices to demonstrate the formulas.
 */

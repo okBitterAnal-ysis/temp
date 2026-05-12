@@ -40,4 +40,5 @@ The Sum of Subsets problem finds all subsets of a given set whose elements
 sum up to a target value. It uses Backtracking to explore the state 
 space tree and prunes branches that cannot lead to a solution.
 Complexity: O(2^n)
+Recurrence Relation: T(n) = 2T(n-1) + O(1)
 */

@@ -50,4 +50,5 @@ The Optimal Binary Search Tree (OBST) problem finds a binary search tree
 for a given set of keys and their search frequencies such that the 
 average search cost is minimized. It uses Dynamic Programming.
 Complexity: O(n^3)
+Recurrence Relation: cost[i][j] = sum(freq, i, j) + min_{i<=r<=j} {cost[i][r-1] + cost[r+1][j]}
 */

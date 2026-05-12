@@ -65,4 +65,5 @@ searches for occurrences of a pattern within a main text by employing
 the observation that when a mismatch occurs, the pattern itself embodies 
 sufficient information to determine where the next match could begin.
 Complexity: O(N + M)
+Recurrence Relation: lps[i] = length of longest proper prefix which is also suffix
 */

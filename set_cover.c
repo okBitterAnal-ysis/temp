@@ -68,4 +68,5 @@ The Set Cover Problem is NP-hard. The Greedy Approximation Algorithm
 repeatedly picks the set that covers the maximum number of remaining 
 uncovered elements. It provides a log(n) approximation.
 Complexity: O(m * n)
+Recurrence Relation: T(n) = O(m * n)
 */

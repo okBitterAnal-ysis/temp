@@ -62,4 +62,5 @@ Bellman-Ford Algorithm finds the shortest path from a source to all other
 vertices in a weighted graph. Unlike Dijkstra, it can handle negative 
 edge weights and detect negative weight cycles.
 Complexity: O(V*E)
+Recurrence Relation: T(i, v) = min(T(i-1, v), min_{u} {T(i-1, u) + w(u, v)})
 */

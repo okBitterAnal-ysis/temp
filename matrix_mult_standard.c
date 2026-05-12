@@ -55,4 +55,5 @@ Standard Matrix Multiplication involves multiplying rows of the first matrix
 by columns of the second matrix. It is the basic approach before 
 exploring more complex Divide and Conquer algorithms.
 Complexity: O(n^3)
+Recurrence Relation: T(n) = O(n^3)
 */

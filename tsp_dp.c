@@ -47,7 +47,7 @@ int main() {
 Concept:
 The Travelling Salesman Problem (TSP) finds the shortest possible route 
 that visits each city exactly once and returns to the origin. 
-This implementation uses Dynamic Programming with Bitmasking 
-(conceptually similar to Branch and Bound state space search).
+This implementation uses Dynamic Programming with Bitmasking.
 Complexity: O(n^2 * 2^n)
+Recurrence Relation: cost(mask, pos) = min_{city} {dist[pos][city] + cost(mask | (1 << city), city)}
 */

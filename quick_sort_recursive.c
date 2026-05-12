@@ -55,4 +55,5 @@ Quick Sort is a Divide and Conquer algorithm. It picks an element as 'pivot'
 and partitions the array around the pivot such that elements smaller than 
 pivot are on the left and larger are on the right.
 Complexity: O(n log n) average, O(n^2) worst case.
+Recurrence Relation: T(n) = T(k) + T(n-k-1) + O(n)
 */

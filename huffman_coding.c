@@ -128,4 +128,5 @@ Huffman Coding is a Greedy algorithm used for lossless data compression.
 It builds a prefix-free binary tree where characters that appear more 
 frequently are assigned shorter codes.
 Complexity: O(n log n)
+Recurrence Relation: T(n) = O(n log n)
 */

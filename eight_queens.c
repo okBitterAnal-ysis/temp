@@ -48,4 +48,5 @@ The 8 Queens Problem is to place eight queens on an 8x8 chessboard
 so that no two queens threaten each other. It uses Backtracking to 
 place queens one by one in columns and backtrack if a conflict occurs.
 Complexity: O(N!)
+Recurrence Relation: T(n) = n * T(n-1) + O(n^2)
 */

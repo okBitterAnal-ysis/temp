@@ -40,4 +40,5 @@ Concept:
 Selection Sort works by repeatedly finding the minimum element from the 
 unsorted part and putting it at the beginning.
 Complexity: O(n^2)
+Recurrence Relation: T(n) = T(n-1) + O(n)
 */

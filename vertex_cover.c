@@ -45,7 +45,7 @@ int main() {
 Concept:
 The Vertex Cover Problem is NP-hard. The Approximation Algorithm (Greedy) 
 works by picking an edge (u, v), adding both u and v to the cover, 
-and removing all edges incident to u or v. This gives a cover at most 
-twice the size of the optimal cover.
+and removing all edges incident to u or v.
 Complexity: O(V + E)
+Recurrence Relation: T(n) = O(V + E)
 */

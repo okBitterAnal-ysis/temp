@@ -57,4 +57,5 @@ to find any one of a set of pattern strings in a text. It calculates a
 hash for the pattern and for each window of text, comparing hashes 
 before checking characters.
 Complexity: O(N+M) average, O(N*M) worst case.
+Recurrence Relation: H(i+1) = (d * (H(i) - T[i] * h) + T[i+M]) mod q
 */

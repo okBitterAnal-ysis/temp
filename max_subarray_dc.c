@@ -42,7 +42,7 @@ int main() {
     int max_sum = maxSubArraySum(arr, 0, n - 1);
     clock_t end = clock();
 
-    printf("Maximum contiguous sum is %d\n", max_sum);
+    printf("Maximum contiguous sum (Divide & Conquer) is %d\n", max_sum);
     printf("Time taken: %f seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
 
     free(arr);
@@ -57,4 +57,5 @@ Using Divide and Conquer, we split the array into two and check:
 2. Max subarray in the right half.
 3. Max subarray crossing the midpoint.
 Complexity: O(n log n)
+Recurrence Relation: T(n) = 2T(n/2) + O(n)
 */

@@ -45,4 +45,5 @@ The 0/1 Knapsack Problem is a classic Dynamic Programming problem.
 Given weights and values of items, we want to maximize the total value 
 in a knapsack of capacity W. Each item can either be taken (1) or not (0).
 Complexity: O(n*W)
+Recurrence Relation: K[i][w] = max(val[i-1] + K[i-1][w-wt[i-1]], K[i-1][w])
 */

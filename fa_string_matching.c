@@ -58,4 +58,5 @@ The Finite Automata String Matching algorithm builds a transition table
 representing a state machine. The machine transitions based on characters 
 read from the text, reaching an 'accept' state when the pattern is found.
 Complexity: O(N + M*Sigma) where Sigma is alphabet size.
+Recurrence Relation: delta(q, a) = length of longest prefix of P which is suffix of Pq + a
 */

@@ -53,4 +53,5 @@ The Graph Coloring Problem assigns colors to vertices such that no two
 adjacent vertices have the same color. It uses Backtracking to try 
 different colors for each vertex and backtrack if no color is valid.
 Complexity: O(m^V)
+Recurrence Relation: T(n) = m * T(n-1) + O(n)
 */

@@ -65,7 +65,7 @@ int main() {
     float d = closestRecursive(P, n);
     clock_t end = clock();
 
-    printf("The smallest distance is %f\n", d);
+    printf("The smallest distance (Divide & Conquer) is %f\n", d);
     printf("Time taken: %f seconds\n", (double)(end - start) / CLOCKS_PER_SEC);
     free(P);
     return 0;
@@ -80,4 +80,5 @@ Using Divide and Conquer:
 3. Find min distance in left and right halves.
 4. Find min distance among points near the dividing line (strip).
 Complexity: O(n log n)
+Recurrence Relation: T(n) = 2T(n/2) + O(n log n)
 */

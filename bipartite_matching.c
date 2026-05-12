@@ -61,4 +61,5 @@ do not share a common vertex in a bipartite graph. It can be solved
 by converting it to a Max Flow problem or using the augmenting path 
 algorithm (as shown here).
 Complexity: O(V*E)
+Recurrence Relation: Matching(u) = (v is free or Matching(matchR[v]))
 */

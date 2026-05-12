@@ -55,4 +55,5 @@ The Fractional Knapsack Problem uses a Greedy approach. We calculate the
 value-to-weight ratio for each item, sort them by this ratio, and take 
 as much as possible of the highest-ratio items first.
 Complexity: O(n log n)
+Recurrence Relation: T(n) = O(n log n)
 */
